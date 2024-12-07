@@ -11,66 +11,6 @@ body {
   color: #333;
 }
 
-.mainpart2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid #3498db;
-  border-radius: 10px;
-  background: #ecf0f1;
-  padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-}
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(90deg, #2c3e50, #3498db);
-  padding: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar .links {
-  margin: 0 15px;
-  position: relative;
-}
-
-.navbar .links a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 1.1em;
-  position: relative;
-  padding: 5px 10px;
-  transition: color 0.3s ease;
-}
-
-.navbar .links a:hover {
-  color: #ecf0f1;
-}
-
-/* Animated underline effect */
-.navbar .links a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0%;
-  height: 3px;
-  background-color: #ecf0f1;
-  transition: width 0.3s ease-in-out;
-}
-
-.navbar .links a:hover::after {
-  width: 100%;
-}
-
 .container {
   width: 80%;
   margin: 0 auto;
@@ -164,6 +104,7 @@ footer p {
   font-size: 1rem;
 }
 
+/* Flexbox Layout */
 .bio {
   display: flex;
   align-items: center;
@@ -200,6 +141,7 @@ footer p {
   line-height: 1.6;
 }
 
+/* New Flex Layout for Skills, Experience, Projects, Education */
 .main-sections {
   display: flex;
   justify-content: space-between;
@@ -223,6 +165,7 @@ footer p {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   .container {
       width: 90%;
@@ -259,6 +202,7 @@ footer p {
       font-size: 1rem;
   }
 
+  /* Change the flex direction for smaller screens */
   .main-sections {
       flex-direction: column;
   }
